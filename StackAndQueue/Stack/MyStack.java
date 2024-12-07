@@ -57,7 +57,7 @@ public class MyStack{
         while(temp != null){
             System.out.print(temp.getData() );
             if(temp.next != null){
-                System.out.print(" -> ");
+                System.out.print(" <- ");
             }
             temp = temp.next;
         }

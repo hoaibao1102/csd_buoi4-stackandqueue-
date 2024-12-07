@@ -51,12 +51,15 @@ public class MyQueue {
         Node temp = front;
         if(isEmpty()){
             return (Integer) null;
-        }else { 
-            data = temp.getData();
-            front= temp.next;
-            length--;
-           
         }
+        data = temp.getData();
+        front= temp.next;
+        length--;
+        if(front == null){
+            rear = null;
+        }
+           
+        
         return data;
     }
 
